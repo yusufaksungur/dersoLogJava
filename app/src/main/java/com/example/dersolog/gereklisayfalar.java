@@ -61,7 +61,7 @@ public class gereklisayfalar extends AppCompatActivity {
         ImageView khanlogo = findViewById(R.id.khan);
 
         ImageView youtubelogo = findViewById(R.id.youtube);
-        ImageView linkedinlogo = findViewById(R.id.logolink);
+        //ImageView linkedinlogo = findViewById(R.id.logolink);
 
         setLogoClickListener(turkcellogo, "https://gelecegiyazanlar.turkcell.com.tr/");
         //setLogoClickListener(btkakademilogo, "https://www.btkakademi.gov.tr/" );
@@ -70,7 +70,7 @@ public class gereklisayfalar extends AppCompatActivity {
         setLogoClickListener(khanlogo, "https://tr.khanacademy.org/");
 
         setLogoClickListener(youtubelogo, "https://www.youtube.com/");
-        setLogoClickListener(linkedinlogo,"https://www.linkedin.com/in/yusufaksungur/");
+        //setLogoClickListener(linkedinlogo,"https://www.linkedin.com/in/yusufaksungur/");
     }
 
     private void setLogoClickListener(ImageView imageView,final String url) {
