@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/vize1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Vize Notu" />
+
+        <EditText
+            android:id="@+id/vizeYuzde"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Vize Yüzdesi (%)" />
+
+        <EditText
+            android:id="@+id/vize2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Final Notu" />
+
+        <EditText
+            android:id="@+id/finalYuzde"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Final Yüzdesi (%)" />
+
+        <EditText
+            android:id="@+id/vize3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="1. Quiz Notu" />
+
+        <EditText
+            android:id="@+id/quiz1Yuzde"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="1. Quiz Yüzdesi (%)" />
+
+        <EditText
+            android:id="@+id/quiz2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="2. Quiz Notu" />
+
+        <EditText
+            android:id="@+id/quiz2Yuzde"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="2. Quiz Yüzdesi (%)" />
+
+        <EditText
+            android:id="@+id/odev1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="1. Ödev Notu" />
+
+        <EditText
+            android:id="@+id/odev1Yuzde"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="1. Ödev Yüzdesi (%)" />
+
+        <EditText
+            android:id="@+id/odev2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="2. Ödev Notu" />
+
+        <EditText
+            android:id="@+id/odev2Yuzde"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="2. Ödev Yüzdesi (%)" />
+
+        <Button
+            android:id="@+id/btnuni"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="hesapla"
+            android:text="Hesapla"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Sonuç"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/sonucTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="17dp"
+            android:text="" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
