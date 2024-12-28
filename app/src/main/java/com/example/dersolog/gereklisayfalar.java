@@ -53,7 +53,7 @@ public class gereklisayfalar extends AppCompatActivity {
             }
         });
 
-         */
+
         ImageView turkcellogo = findViewById(R.id.turkcell);
         //ImageView btkakademilogo = findViewById(R.id.btkakademi);
 
@@ -81,5 +81,8 @@ public class gereklisayfalar extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+         */
     }
 }
+

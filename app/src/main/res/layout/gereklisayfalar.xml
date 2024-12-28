@@ -3,47 +3,4 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <ImageView
-        android:id="@+id/turkcell"
-        android:layout_width="179dp"
-        android:layout_height="167dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="72dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/gelecekturkcell" />
-
-    <ImageView
-        android:id="@+id/youtube"
-        android:layout_width="179dp"
-        android:layout_height="167dp"
-        android:layout_marginTop="492dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/youtube" />
-
-    <ImageView
-        android:id="@+id/udemy"
-        android:layout_width="179dp"
-        android:layout_height="167dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="20dp"
-        app:layout_constraintEnd_toStartOf="@+id/khan"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/turkcell"
-        app:srcCompat="@drawable/udemy" />
-
-    <ImageView
-        android:id="@+id/khan"
-        android:layout_width="179dp"
-        android:layout_height="167dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/khanacademy"
-        tools:layout_editor_absoluteY="72dp" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+    android:layout_height="match_parent"/>
