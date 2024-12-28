@@ -19,11 +19,12 @@
         android:id="@+id/youtube"
         android:layout_width="179dp"
         android:layout_height="167dp"
-        android:layout_marginTop="492dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/udemy"
+        app:layout_constraintTop_toBottomOf="@+id/khan"
         app:srcCompat="@drawable/youtube" />
 
     <ImageView
@@ -32,8 +33,6 @@
         android:layout_height="167dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="20dp"
-        app:layout_constraintEnd_toStartOf="@+id/khan"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/turkcell"
         app:srcCompat="@drawable/udemy" />
@@ -42,8 +41,55 @@
         android:id="@+id/khan"
         android:layout_width="179dp"
         android:layout_height="167dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/khanacademy"
-        tools:layout_editor_absoluteY="72dp" />
+        app:layout_constraintStart_toEndOf="@+id/turkcell"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/khanacademy" />
+
+    <ImageView
+        android:id="@+id/eokul"
+        android:layout_width="183dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/github"
+        app:srcCompat="@drawable/eokul" />
+
+    <ImageView
+        android:id="@+id/btkakademi"
+        android:layout_width="183dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/eokul"
+        app:layout_constraintTop_toBottomOf="@+id/linkedin"
+        app:srcCompat="@drawable/btk" />
+
+    <ImageView
+        android:id="@+id/linkedin"
+        android:layout_width="179dp"
+        android:layout_height="167dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/github"
+        app:layout_constraintTop_toBottomOf="@+id/youtube"
+        app:srcCompat="@drawable/linkedin" />
+
+    <ImageView
+        android:id="@+id/github"
+        android:layout_width="179dp"
+        android:layout_height="167dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/udemy"
+        app:srcCompat="@drawable/github" />
 </androidx.constraintlayout.widget.ConstraintLayout>

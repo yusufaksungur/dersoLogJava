@@ -54,23 +54,28 @@ public class gereklisayfalar extends AppCompatActivity {
         });
 
          */
+
         ImageView turkcellogo = findViewById(R.id.turkcell);
-        //ImageView btkakademilogo = findViewById(R.id.btkakademi);
+        setLogoClickListener(turkcellogo, "https://gelecegiyazanlar.turkcell.com.tr/");
+
+        ImageView btkakademilogo = findViewById(R.id.btkakademi);
+        setLogoClickListener(btkakademilogo, "https://www.btkakademi.gov.tr/" );
 
         ImageView udemylogo = findViewById(R.id.udemy);
-        ImageView khanlogo = findViewById(R.id.khan);
-
-        ImageView youtubelogo = findViewById(R.id.youtube);
-        //ImageView linkedinlogo = findViewById(R.id.logolink);
-
-        setLogoClickListener(turkcellogo, "https://gelecegiyazanlar.turkcell.com.tr/");
-        //setLogoClickListener(btkakademilogo, "https://www.btkakademi.gov.tr/" );
-
         setLogoClickListener(udemylogo, "https://www.udemy.com/");
+
+        ImageView khanlogo = findViewById(R.id.khan);
         setLogoClickListener(khanlogo, "https://tr.khanacademy.org/");
 
+        ImageView youtubelogo = findViewById(R.id.youtube);
         setLogoClickListener(youtubelogo, "https://www.youtube.com/");
-        //setLogoClickListener(linkedinlogo,"https://www.linkedin.com/in/yusufaksungur/");
+
+        ImageView linkedinlogo = findViewById(R.id.linkedin);
+        setLogoClickListener(linkedinlogo,"https://www.linkedin.com/in/yusufaksungur/");
+
+        ImageView githublogo = findViewById(R.id.github);
+        setLogoClickListener(githublogo,  "https://www.github.com/");
+
     }
 
     private void setLogoClickListener(ImageView imageView,final String url) {
