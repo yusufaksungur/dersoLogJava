@@ -3,4 +3,95 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"/>
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/turkcell"
+        android:layout_width="179dp"
+        android:layout_height="167dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gelecekturkcell" />
+
+    <ImageView
+        android:id="@+id/youtube"
+        android:layout_width="179dp"
+        android:layout_height="167dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/udemy"
+        app:layout_constraintTop_toBottomOf="@+id/khan"
+        app:srcCompat="@drawable/youtube" />
+
+    <ImageView
+        android:id="@+id/udemy"
+        android:layout_width="179dp"
+        android:layout_height="167dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/turkcell"
+        app:srcCompat="@drawable/udemy" />
+
+    <ImageView
+        android:id="@+id/khan"
+        android:layout_width="179dp"
+        android:layout_height="167dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/turkcell"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/khanacademy" />
+
+    <ImageView
+        android:id="@+id/linkedin"
+        android:layout_width="179dp"
+        android:layout_height="167dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/udemy"
+        app:srcCompat="@drawable/linkedin" />
+
+    <ImageView
+        android:id="@+id/github"
+        android:layout_width="179dp"
+        android:layout_height="167dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linkedin"
+        app:layout_constraintTop_toBottomOf="@+id/youtube"
+        app:srcCompat="@drawable/github" />
+
+    <ImageView
+        android:id="@+id/btkakademi"
+        android:layout_width="180dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/eokull"
+        app:layout_constraintTop_toBottomOf="@+id/github"
+        app:srcCompat="@drawable/btk" />
+
+    <ImageView
+        android:id="@+id/eokull"
+        android:layout_width="180dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linkedin"
+        app:srcCompat="@drawable/eokul" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
