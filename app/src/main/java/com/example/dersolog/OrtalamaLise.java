@@ -19,6 +19,7 @@ public class OrtalamaLise extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.ortalamalise);
 
+        //Notları tanımlama
         edt1 = findViewById(R.id.edt1);
         edt2 = findViewById(R.id.edt2);
         edt3 = findViewById(R.id.edt3);
@@ -29,9 +30,10 @@ public class OrtalamaLise extends AppCompatActivity {
 
     @SuppressLint("WrongViewCast")
     public void hesapla(View view) {
-        int toplam = 0;
-        int sayac = 0;
+        int toplam = 0; // Girilen değerlerin toplamını tutacak değişken.
+        int sayac = 0;  // Girilen değer sayısını takip edecek değişken.
 
+        // Eğer veriler boş değilse, içindeki değeri topla ve sayacı artır.isEmpty()
         if (!edt1.getText().toString().isEmpty()) {
             toplam += Integer.parseInt(edt1.getText().toString());
             sayac++;
@@ -53,10 +55,13 @@ public class OrtalamaLise extends AppCompatActivity {
             sayac++;
         }
 
+        // Eğer veriler boş değilse, içindeki değeri topla ve sayacı artır.
         if (sayac > 0) {
             double sonuc = (double) toplam / sayac; // double ile bölme
             textsonuc.setText(String.format("Ortalama: %.2f", sonuc));
-        } else {
+        }
+        else {
+            // Eğer hiç değer girilmemişse, kullanıcıya bilgi mesajı göster.
             textsonuc.setText("Lütfen en az bir not girin.");
         }
     }

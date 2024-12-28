@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-    <!-- Uygulama izinlerini burada belirtin -->
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -26,13 +25,14 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            +
+
         </activity> <!-- Diğer aktiviteler -->
         <activity android:name=".Ortalama" />
         <activity android:name=".Notdefteri" />
         <activity android:name=".OrtalamaLise" />
         <activity android:name=".OrtalamaUniDersOrt" />
         <activity android:name=".gereklisayfalar" />
-        <activity android:name=".ChatActivity" />
     </application>
 
 </manifest>

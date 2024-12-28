@@ -16,6 +16,7 @@ public class OrtalamaUniDersOrt extends AppCompatActivity {
     }
 
     public void hesapla(View view) {
+        //vize not ve yüzdeleri tanımlama
         EditText vizeInput = findViewById(R.id.vize1);
         EditText vizeYuzde = findViewById(R.id.vizeYuzde);
         EditText finalInput = findViewById(R.id.vize2);
@@ -30,11 +31,13 @@ public class OrtalamaUniDersOrt extends AppCompatActivity {
         EditText odev2Yuzde = findViewById(R.id.odev2Yuzde);
         TextView sonucTextView = findViewById(R.id.sonucTextView);
 
-        // Notların alınması
+        // Kullanıcının girdiği verileri alır ve double türüne dönüştürür.
         double vize = Double.parseDouble(vizeInput.getText().toString());
         double vizeYuzdeVal = Double.parseDouble(vizeYuzde.getText().toString());
         double finalNotu = Double.parseDouble(finalInput.getText().toString());
         double finalYuzdeVal = Double.parseDouble(finalYuzde.getText().toString());
+
+        // Quiz ve ödev girişleri boş olabilir, bu nedenle kontrol yapılır.
         double quiz1 = !quiz1Input.getText().toString().isEmpty() ? Double.parseDouble(quiz1Input.getText().toString()) : 0;
         double quiz1YuzdeVal = !quiz1Yuzde.getText().toString().isEmpty() ? Double.parseDouble(quiz1Yuzde.getText().toString()) : 0;
         double quiz2 = !quiz2Input.getText().toString().isEmpty() ? Double.parseDouble(quiz2Input.getText().toString()) : 0;
@@ -80,6 +83,7 @@ public class OrtalamaUniDersOrt extends AppCompatActivity {
             harfNotu = "F";
         }
 
+        // Sonucu ekranda gösterir.
         sonucTextView.setText("Sonuç: " + toplamPuan + " - Harf Notu: " + harfNotu);
     }
 }

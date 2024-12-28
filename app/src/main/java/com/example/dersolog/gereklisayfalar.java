@@ -28,33 +28,6 @@ public class gereklisayfalar extends AppCompatActivity {
 
 
 
-        /* turkcellogo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://gelecegiyazanlar.turkcell.com.tr/"));
-                startActivity(intent);
-
-            }
-        });
-
-        btkakademilogo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.btkakademi.gov.tr/"));
-                startActivity(intent);
-            }
-        });
-
-        youtubelogo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/"));
-                startActivity(intent);
-            }
-        });
-
-         */
-
         ImageView turkcellogo = findViewById(R.id.turkcell);
         setLogoClickListener(turkcellogo, "https://gelecegiyazanlar.turkcell.com.tr/");
 
@@ -77,6 +50,15 @@ public class gereklisayfalar extends AppCompatActivity {
         setLogoClickListener(githublogo,  "https://www.github.com/");
 
     }
+
+    /*Burada setLogoClickListener adında bir metod tanımlayarak kod tekrarının bir nebzede olsa önüne geçtik
+    Verilen urlin doğru çalışması icin intent.ACTION_VIEW ve tarayacı icin Uri.parse kullanıldı.
+
+        AndroidManifest.XML de saydfaların acılabilmesi icin asağıdaki uygulama iznini verdim,
+
+     <uses-permission android:name="android.permission.INTERNET" />
+
+     */
 
     private void setLogoClickListener(ImageView imageView,final String url) {
         imageView.setOnClickListener(new View.OnClickListener() {

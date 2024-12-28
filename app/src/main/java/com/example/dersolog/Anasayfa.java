@@ -19,6 +19,11 @@ public class Anasayfa extends AppCompatActivity {
 
     }
 
+    /*Burada intentle iki aktiviteyi bir birine bağlıyoruz
+
+      Aynı zamanda AndroidManifest.XML de activity tanımlıyoruz
+
+     */
     public void buttonNot(View view){
         Intent intent = new Intent(Anasayfa.this, Notdefteri.class);
         startActivity(intent);

@@ -22,6 +22,13 @@ public class Ortalama extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.ortalama);
     }
+
+    /*Burada intentle iki aktiviteyi bir birine bağlıyoruz
+
+      Aynı zamanda AndroidManifest.XML de activity tanımlıyoruz
+
+
+     */
     public void buttonuni(View view){
         Intent intent = new Intent(Ortalama.this, OrtalamaUniDersOrt.class);
         startActivity(intent);
