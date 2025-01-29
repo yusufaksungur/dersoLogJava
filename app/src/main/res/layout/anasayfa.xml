@@ -1,136 +1,159 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Anasayfa">
 
-    <!-- Arka plan resmi -->
+    <!-- Arka Plan Resmi -->
 
-    <!-- Not butonu -->
+    <!-- Not Defteri Butonu -->
 
-    <!-- Hesap makinesi butonu -->
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="1385dp"
-        android:layout_height="2427dp"
-        android:alpha="0.3"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <!-- Not Defteri Metni -->
+    <ImageButton
+        android:id="@+id/buttonNot"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:layout_marginTop="55dp"
+        android:backgroundTint="#001F54"
+        android:contentDescription="Not Defterine Git"
+        android:onClick="buttonNot"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintHeight_percent="0.2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499"
+        app:layout_constraintWidth_percent="0.45"
+        app:srcCompat="@drawable/note" />
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.3"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/derskap" />
 
     <ImageButton
-        android:id="@+id/buttonNot"
-        android:layout_width="179dp"
-        android:layout_height="167dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="150dp"
-        android:backgroundTint="#001F54"
-        android:onClick="buttonNot"
-        app:cornerRadius="8dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/note"
-        tools:ignore="MissingConstraints" />
-
-    <ImageButton
         android:id="@+id/buttonHesap"
-        android:layout_width="179dp"
-        android:layout_height="167dp"
-        android:layout_marginTop="150dp"
-        android:layout_marginEnd="20dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:layout_marginTop="16dp"
         android:backgroundTint="#001F54"
+        android:contentDescription="Hesap Makinesine Git"
         android:onClick="buttonHesap"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewNot"
+        app:layout_constraintWidth_percent="0.45"
         app:srcCompat="@drawable/hesapmakinasi" />
 
-    <!-- Diğer butonu -->
+    <TextView
+        android:id="@+id/textViewHesap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Hesap Makinen"
+        android:textColor="#010F4D"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonHesap" />
+
     <ImageButton
         android:id="@+id/buttonSayfa"
-        android:layout_width="179dp"
-        android:layout_height="167dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="100dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:layout_marginTop="16dp"
         android:backgroundTint="#001F54"
+        android:contentDescription="AkademiLog'a Git"
         android:onClick="buttonSayfa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@id/textViewHesap"
+        app:layout_constraintWidth_percent="0.45"
         app:srcCompat="@drawable/diger" />
 
-    <!-- Ortalama butonu -->
+    <TextView
+        android:id="@+id/textViewSayfa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="AkademiLog"
+        android:textColor="#010F4D"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSayfa" />
+
     <ImageButton
         android:id="@+id/buttonOrtalama"
-        android:layout_width="179dp"
-        android:layout_height="167dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="20dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:layout_marginTop="16dp"
         android:backgroundTint="#001F54"
+        android:contentDescription="Ortalama Hesaplayıcıya Git"
         android:onClick="buttonOrt"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewSayfa"
+        app:layout_constraintWidth_percent="0.45"
         app:srcCompat="@drawable/ortalama" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textViewOrtalama"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="55dp"
-        android:layout_marginTop="10dp"
-        android:text="Not Defterin"
-        android:textColor="#010F4D"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonNot"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="55dp"
-        android:layout_marginTop="10dp"
-        android:text="AkademiLog"
-        android:textColor="#010F4D"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonSayfa"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="45dp"
-        android:text="Hesap Makinen"
-        android:textColor="#010F4D"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonHesap"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="5dp"
+        android:layout_marginTop="4dp"
         android:text="Ortalama Hesaplayıcın"
         android:textColor="#010F4D"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonOrtalama"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonOrtalama" />
+
+    <TextView
+        android:id="@+id/textViewNot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Not Defterin"
+        android:textColor="#010F4D"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonNot" />
+
+    <!-- Hesap Makinesi Butonu -->
+
+    <!-- Hesap Makinesi Metni -->
+
+    <!-- AkademiLog Butonu -->
+
+    <!-- AkademiLog Metni -->
+
+    <!-- Ortalama Hesaplayıcı Butonu -->
+
+    <!-- Ortalama Hesaplayıcı Metni -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

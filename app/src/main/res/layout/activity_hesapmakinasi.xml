@@ -7,9 +7,10 @@
     android:layout_height="match_parent"
     tools:context=".Hesapmakinasi">
 
+    <!-- Input Area -->
     <EditText
         android:id="@+id/inputData"
-        android:layout_width="389dp"
+        android:layout_width="0dp"
         android:layout_height="145dp"
         android:layout_margin="16dp"
         android:background="@android:color/transparent"
@@ -17,11 +18,12 @@
         android:hint="0"
         android:inputType="none"
         android:textColor="@android:color/black"
-        android:textSize="55dp"
+        android:textSize="55sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- Table Layout for Buttons -->
     <TableLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -33,183 +35,178 @@
 
         <!-- First Row -->
         <TableRow>
-
             <Button
                 android:id="@+id/btn_clear"
-                android:layout_width="100dp"
+                android:layout_width="0dp"
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:backgroundTint="#001F54"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:text="C" />
 
             <Button
                 android:id="@+id/btn_divide"
-                android:layout_width="100dp"
+                android:layout_width="0dp"
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:backgroundTint="#001F54"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:text="/" />
 
             <Button
                 android:id="@+id/btn_multiply"
-                android:layout_width="100dp"
+                android:layout_width="0dp"
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:backgroundTint="#001F54"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:text="*" />
 
             <Button
                 android:id="@+id/btn_delete"
-                android:layout_width="100dp"
+                android:layout_width="0dp"
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:backgroundTint="#001F54"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:text="DEL" />
         </TableRow>
 
         <!-- Second Row -->
         <TableRow>
-
             <Button
                 android:id="@+id/btn_7"
-                android:layout_width="100dp"
+                android:layout_width="0dp"
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:backgroundTint="#001F54"
-                android:textSize="35dp"
+                android:textSize="35sp"
                 android:text="7" />
 
             <Button
                 android:id="@+id/btn_8"
-                android:layout_width="100dp"
+                android:layout_width="0dp"
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:backgroundTint="#001F54"
-                android:textSize="35dp"
+                android:textSize="35sp"
                 android:text="8" />
 
             <Button
                 android:id="@+id/btn_9"
-                android:layout_width="100dp"
+                android:layout_width="0dp"
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:backgroundTint="#001F54"
-                android:textSize="35dp"
+                android:textSize="35sp"
                 android:text="9" />
 
             <Button
                 android:id="@+id/btn_minus"
-                android:layout_width="100dp"
+                android:layout_width="0dp"
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:backgroundTint="#001F54"
-                android:textSize="35dp"
+                android:textSize="35sp"
                 android:text="-" />
         </TableRow>
 
         <!-- Third Row -->
         <TableRow>
-
             <Button
                 android:id="@+id/btn_4"
-                android:layout_width="100dp"
+                android:layout_width="0dp"
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:backgroundTint="#001F54"
-                android:textSize="35dp"
+                android:textSize="35sp"
                 android:text="4" />
 
             <Button
                 android:id="@+id/btn_5"
-                android:layout_width="100dp"
+                android:layout_width="0dp"
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:backgroundTint="#001F54"
-                android:textSize="35dp"
+                android:textSize="35sp"
                 android:text="5" />
 
             <Button
                 android:id="@+id/btn_6"
-                android:layout_width="100dp"
+                android:layout_width="0dp"
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:backgroundTint="#001F54"
-                android:textSize="35dp"
+                android:textSize="35sp"
                 android:text="6" />
 
             <Button
                 android:id="@+id/btn_plus"
-                android:layout_width="100dp"
+                android:layout_width="0dp"
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:backgroundTint="#001F54"
-                android:textSize="35dp"
+                android:textSize="35sp"
                 android:text="+" />
         </TableRow>
 
         <!-- Fourth Row -->
         <TableRow>
-
             <Button
                 android:id="@+id/btn_1"
-                android:layout_width="100dp"
+                android:layout_width="0dp"
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:backgroundTint="#001F54"
-                android:textSize="35dp"
+                android:textSize="35sp"
                 android:text="1" />
 
             <Button
                 android:id="@+id/btn_2"
-                android:layout_width="100dp"
+                android:layout_width="0dp"
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:backgroundTint="#001F54"
-                android:textSize="35dp"
+                android:textSize="35sp"
                 android:text="2" />
 
             <Button
                 android:id="@+id/btn_3"
-                android:layout_width="100dp"
+                android:layout_width="0dp"
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:backgroundTint="#001F54"
-                android:textSize="35dp"
+                android:textSize="35sp"
                 android:text="3" />
 
             <Button
                 android:id="@+id/btn_equals"
-                android:layout_width="100dp"
-                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
                 android:layout_weight="1"
                 android:backgroundTint="#001F54"
-                android:text="="
-                android:textSize="35dp" />
+                android:textSize="35sp"
+                android:text="=" />
         </TableRow>
 
         <!-- Fifth Row -->
         <TableRow>
-
             <Button
                 android:id="@+id/btn_0"
-                android:layout_width="100dp"
+                android:layout_width="0dp"
                 android:layout_height="100dp"
-                android:backgroundTint="#001F54"
-                android:textSize="35dp"
                 android:layout_weight="2"
+                android:backgroundTint="#001F54"
+                android:textSize="35sp"
                 android:text="0" />
 
             <Button
                 android:id="@+id/btn_dot"
-                android:layout_width="100dp"
+                android:layout_width="0dp"
                 android:layout_height="100dp"
-                android:backgroundTint="#001F54"
-                android:textSize="35dp"
                 android:layout_weight="1"
+                android:backgroundTint="#001F54"
+                android:textSize="35sp"
                 android:text="." />
         </TableRow>
 
